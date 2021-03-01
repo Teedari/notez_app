@@ -1,3 +1,4 @@
+import 'package:create_notez/Notez/Tabs/notez_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -81,12 +82,10 @@ class _BaseWidgetState extends State<BaseWidget> {
         body: SafeArea(
           child: TabBarView(
             children: [
-              TodoSettings(),
+              NotezView(),
               HomeTodo(),
+              TodoSettings(),
               TodoList(),
-              Center(
-                child: Text('Tab 2'),
-              ),
               Center(
                 child: Text('Tab 4'),
               ),

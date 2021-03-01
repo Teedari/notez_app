@@ -1,3 +1,4 @@
+import 'package:create_notez/Notez/notez_analysis.dart';
 import 'package:flutter/material.dart';
 import '../favourite_task.dart';
 import '../global_widget.dart';
@@ -12,12 +13,7 @@ class HomeTodo extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           myAppBar(context),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.only(right: 10),
-              child: Placeholder(),
-            ),
-          ),
+          NotezAnalyzer(),
           OnGoingTask(),
           TodaysPlan(),
         ],
